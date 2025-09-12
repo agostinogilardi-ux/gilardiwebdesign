@@ -256,10 +256,9 @@ p{line-height: 28px; font-weight: 300;}
 @media (max-width: 768px) {
   .hero__img img{margin-left: 40px;}
   .hero__img {padding-top:80px; width: 100%;margin-bottom: 40px;}
-  .hero__content{padding-top:50px; width: 100%;margin-bottom: 40px;}
+  .hero__content{ width: 100%;margin-bottom: 40px;}
   .blob{top:-10%}
-  .hero{flex-wrap: wrap;padding:30% 10%;height: 40vh;}
-  .hero__content{width: 100%; margin-top: 40px; }
+  .hero{flex-wrap: wrap;padding:30% 7%;height: 40vh;}
   .hero__content h1{font-size: 32px;}
   .hero__content h3{font-size: 14px;}
   .hero__content p{font-size: 23px;}
