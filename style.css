@@ -589,7 +589,8 @@ text-align: right; margin-right: 180px;font-size: 50px;font-weight: 600; padding
     margin: 0;
   }
 
-  .assistance__content h2 {
+  .assistance__content h2,
+  .assistance__content-right h2 {
     font-size: 28px;
   }
 
