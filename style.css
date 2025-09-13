@@ -70,6 +70,14 @@ p{line-height: 28px; font-weight: 300;}
 .f-nav .button{color: #000}
 .hamburger{display: none;}
 
+/* Disattiva underline animato sotto i link del menu su mobile */
+@media (max-width: 768px) {
+  .menu li a::after {
+    content: none !important; /* rimuove la pseudo-elemento */
+    animation: none !important; /* disattiva animazione */
+    transition: none !important; /* blocca transizione */
+  }
+}
 
 
 @media (max-width: 768px) {
@@ -342,6 +350,20 @@ p{line-height: 28px; font-weight: 300;}
 .about__content-2 h2{text-transform: uppercase;font-size: 32px;letter-spacing: 2.4px;color: #000;font-weight: 900;}
 .about__content-1 p{max-width: 720px; margin-left: auto !important; margin-right: auto !important; font-size: 20px;font-weight:300; color: #000; }
 .about__content-2{ background: #F5F5F5; width: 80%; margin-left: calc(50% - 40vw); text-align: center; padding: 45px 15% 80px 15%; }
+
+@media (max-width: 375px) {
+.about__content{
+  margin-top: 150px;
+}
+.project-card{
+  margin: 0 12px 0 -25px !important;
+}
+.h-bar{
+  width: 320px;
+}
+}
+
+
 @media (max-width: 768px) {
   .about-1{padding-top: 0 !important;}
   .about__content{ width: 90%;
@@ -448,10 +470,10 @@ text-align: right; margin-right: 180px;font-size: 50px;font-weight: 600; padding
     margin-top: 40px;
    }
    .assistance-2{
-      margin: 35% 6% 40px !important;
+      margin: 150px 6% 40px !important;
    }
    .assistance__content-2{
-    padding: 16% 10% !important;
+    padding: 80px 5% !important;
    }
 
 }
@@ -696,7 +718,7 @@ text-align: right; margin-right: 180px;font-size: 50px;font-weight: 600; padding
 .grid .col{width: 100%;}
 
 @media (max-width: 768px) {
-  .grid{flex-wrap: wrap;width: 100%;}
+  .grid{flex-wrap: wrap;width: 100%;padding: 0;}
   
 }
 

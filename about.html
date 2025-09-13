@@ -59,7 +59,7 @@ Da sempre curioso di tecnologia, ho trasformato la mia passione in un lavoro: cr
 </div>
 
   <div class="about about-1">
-    <div class="about__content">
+    <div class="about__content" style="margin-top: 0 !important;">
       <h2>Il mio approccio al web</h2>
       <p>Per me un sito non è mai solo “presenza online”: è uno strumento strategico, capace di attrarre clienti, rafforzare un brand e creare opportunità concrete.</p>
       <p>Da autodidatta ho imparato a trasformare la passione per la tecnologia in competenze reali, unendo design, funzionalità e strategia digitale. Oggi il mio obiettivo è mettere questa esperienza al servizio di chi vuole distinguersi davvero.</p>
@@ -235,36 +235,6 @@ $(document).ready(function() {
 
   
 
-});
-
-</script>
-<script>
-  const video = document.querySelector("video");
-
-function startPreview() {
-  video.muted = true;
-  video.currentTime = 1;
-  video.playbackRate = 0.5;
-  video.play();
-}
-
-function stopPreview() {
-  video.currentTime = 0;
-  video.playbackRate = 1;
-  video.pause();
-}
-
-let previewTimeout = null;
-
-video.addEventListener("mouseenter", () => {
-  startPreview();
-  previewTimeout = setTimeout(stopPreview, 4000);
-});
-
-video.addEventListener("mouseleave", () => {
-  clearTimeout(previewTimeout);
-  previewTimeout = null;
-  stopPreview();
 });
 
 </script>
