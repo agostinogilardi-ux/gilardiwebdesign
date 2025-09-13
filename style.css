@@ -351,6 +351,8 @@ p{line-height: 28px; font-weight: 300;}
 .about__content-1 p{max-width: 720px; margin-left: auto !important; margin-right: auto !important; font-size: 20px;font-weight:300; color: #000; }
 .about__content-2{ background: #F5F5F5; width: 80%; margin-left: calc(50% - 40vw); text-align: center; padding: 45px 15% 80px 15%; }
 
+
+/* ! per iphone SE */
 @media (max-width: 375px) {
 .about__content{
   margin-top: 150px;
@@ -361,6 +363,11 @@ p{line-height: 28px; font-weight: 300;}
 .h-bar{
   width: 320px;
 }
+@keyframes animazione {
+    0%{width: 0}
+    50%{}
+    100%{width: 320px;}
+  }
 }
 
 
