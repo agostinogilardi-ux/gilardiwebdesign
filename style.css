@@ -369,6 +369,13 @@ p{line-height: 28px; font-weight: 300;}
 .project-card{
   margin: 0 12px 0 -25px !important;
 }
+
+.bg-cover__title,
+  .bg-cover__text {
+   
+    padding: 10px !important;
+  }
+
 .h-bar{
   width: 320px;
 }
