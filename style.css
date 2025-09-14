@@ -1267,6 +1267,12 @@ text-align: right; margin-right: 180px;font-size: 50px;font-weight: 600; padding
   }
 }
 
+@media (min-width: 376px) and (max-width: 414px) {
+  .projects-grid-section{
+    padding: 0;
+  }
+}
+
 @media (max-width: 768px) {
    .project-card:hover{
   transform: scale(1.1) !important;
