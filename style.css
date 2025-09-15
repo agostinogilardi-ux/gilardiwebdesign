@@ -1601,3 +1601,34 @@ z-index: 10;
   }
 }
 
+p.gb-headline {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5em;
+    text-align: center;
+    padding-top: 0 !important;
+    margin-bottom: 50px;
+}
+.gb-headline-text a{
+	letter-spacing: 2px;
+	font-weight: 700;
+	 color: #000;
+	text-decoration: none;
+    border-bottom: none;
+    outline: none;
+}
+
+p.gb-headline .gb-icon {
+    line-height: 0;
+    color: #EFC75E;
+  }
+
+	p.gb-headline-1 .gb-icon svg {
+    width: 1em;
+    height: 1em;
+}
+.gb-icon svg {
+    fill: currentColor;
+}
