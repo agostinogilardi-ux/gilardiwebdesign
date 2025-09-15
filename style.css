@@ -200,7 +200,7 @@ p{line-height: 28px; font-weight: 300;}
     right: -110%;
     background: #000;
     height: 100vh;
-    padding-top: 80px;
+    padding-top: 40px;
     transition: right 0.3s ease;
   }
   .menu li {
@@ -1321,5 +1321,270 @@ z-index: 10;
 .whatsapp-float img {
   width: 60px;
   height: 60px;
+}
+
+/* sezione recensioni */
+.reviews-section {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 400px;
+  margin: 5% 10%;
+}
+
+/* Colonna sinistra */
+.reviews-left {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;      /* centra verticalmente */
+  justify-content: center;  /* centra orizzontalmente */
+  background: #eae7e7;
+  padding: 20px;
+  text-align: center;
+  border-top-left-radius: 30px;  
+  border-bottom-left-radius: 30px;
+  text-transform: uppercase;
+  
+}
+
+.reviews-left h2 {
+  font-size: 30px;
+  color: #333;
+  margin: 0;
+  font-weight: 800;
+  padding: 30px 0;
+}
+
+/* Colonna destra */
+.reviews-right {
+  flex: 1 1 50%;
+  padding: 40px;
+  background: #fff;
+  border-top-right-radius: 30px;  
+  border-bottom-right-radius: 30px;
+  
+}
+
+.reviews-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reviews-right input,
+.reviews-right textarea,
+.reviews-right select
+ {
+  padding: 0;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 2px;
+}
+
+.reviews-right button {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 12px !important;
+    border: 3px solid transparent;
+    color: #000;
+    background-color: #EFC75E;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Responsività per mobile */
+@media (max-width: 768px) {
+
+  .reviews-section {
+    flex-direction: column;
+    margin: 25px 25px 50px;
+  }
+.reviews-left {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+   
+  }
+
+  .reviews-right {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+ 
+  }
+  .reviews-left,
+  .reviews-right {
+    flex: 1 1 100%;
+  }
+  .reviews-right button{
+    font-size: 17px;
+  }
+}
+
+/* Lista recensioni */
+#reviews-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.review {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.review strong {
+  font-size: 16px;
+  color: #333;
+}
+
+.review p {
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 1.4;
+  color: #555;
+}
+
+.stars {
+  color: #FFD700; /* giallo oro */
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .reviews {
+    padding: 10px;
+  }
+
+  .reviews form {
+    padding: 15px;
+  }
+
+  .review {
+    padding: 12px;
+  }
+}
+
+/* sezione testimonianze */
+
+.recensioni {
+  background-color: #F5F5F5;
+  padding: 60px 20px;
+  text-align: center;
+  margin: 5% 10% 40px;
+}
+
+.recensioni h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #222;
+  font-weight: 900;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 350px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card-container-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonne */
+  gap: 20px;
+}
+.testimonial-card-1 {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
+/* Mobile: 1 colonna */
+@media (max-width: 768px) {
+  .card-container-1 {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-card-1 {
+    width: 90%;   /* un po’ più stretta */
+    margin: 0 auto; 
+}
+.recensioni{
+  margin: 0;
+}
+}
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 3px solid #2b2b2b;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.stars {
+  color: #f5c518;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.review-text {
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+/* Mobile: cards una sotto l’altra */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recensioni {
+  padding: 30px 10px !important;
+  }
+
+  .recensioni h2{
+	padding: 0 15px;
+  }
+  .testimonial-card {
+    max-width: 90%;
+  }
 }
 
