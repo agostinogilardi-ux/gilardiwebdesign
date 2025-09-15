@@ -109,7 +109,7 @@ p{line-height: 28px; font-weight: 300;}
   .cta{display: none;}
   .logo img{position:relative; right: 30px;}
   .menu{position: fixed; top:0; right:-100%; z-index: 9999;background: #e5e3e3 !important;height: 100vh;padding-top: 80px;}
-  .menu li{display: block; margin-bottom: 20px;}
+  .menu li{display: block; margin-bottom: 15px;}
   .menu li a{padding: 15px 30px;color:#000 !important;font-size: 20px;}
   
   .menu--open{right:0%;}
@@ -140,7 +140,7 @@ p{line-height: 28px; font-weight: 300;}
   left: 0;
   background: #fff;
   border-radius: 10PX;
-  min-width: 200px;
+  min-width: 250px;
   padding: 15px 0;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   z-index: 9999;
@@ -165,7 +165,7 @@ p{line-height: 28px; font-weight: 300;}
   text-decoration: none;
   border-bottom: 1px solid #ddd;
   box-sizing: border-box;      
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* rimuovi la linea dall’ultimo elemento */
@@ -189,6 +189,19 @@ p{line-height: 28px; font-weight: 300;}
   display: block;
 }
 
+@media (max-width: 768px) {
+  .menu .dropdown-menu {
+    left: 20px;          /* più centrato su schermi piccoli */
+    min-width: 160px;    /* menu meno largo */
+    padding: 10px 0;
+  }
+
+  .menu .dropdown-menu li a {
+    font-size: 14px !important;  /* dimensione più adatta per mobile */
+    min-height: 40px;            /* meno ingombrante */
+    padding: 8px 15px;           /* più compatto */
+  }
+}
 
 
 /* ipad */
@@ -196,7 +209,7 @@ p{line-height: 28px; font-weight: 300;}
   .menu {
     width: 100%;
     position: fixed;
-    top: 80px;
+    top: 79px;
     right: -110%;
     background: #000;
     height: 100vh;
