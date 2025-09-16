@@ -189,10 +189,6 @@ p{line-height: 28px; font-weight: 300;}
   display: block;
 }
 
-/* Mobile */
-.menu .dropdown:focus-within .dropdown-menu {
-  display: block;
-}
 
 @media (max-width: 768px) {
   .menu .dropdown-menu {
