@@ -72,7 +72,7 @@ p{line-height: 28px; font-weight: 300;}
 .menu li{display: inline-block;z-index: 1001;position: relative;padding: 0 15px;}
 .menu li a::after{content: ''; position: absolute;top: 20px; left: 0; width: 0;height: 3px;background:rgb(239, 199, 94) ;transition: width .3s;}
 .menu li a:hover::after{width: 100%;}
-.menu li a{color: #000;display: inline;font-size: 14px;font-weight: 400;letter-spacing: 2.4px;position: relative; text-decoration: none; line-height: 40px;}
+.menu li a{color: #000;display: inline;font-size: 14px;font-weight: 400;letter-spacing: 1.5px;position: relative; text-decoration: none; line-height: 40px;}
 
 .f-nav{ z-index: 9999; position:fixed; top:10px; width:99%; border-radius: 8px; background: #e5e3e3 ;box-shadow: 0 2px 10px rgba(0,0,0,0.2);}
 .f-nav li a{color: #000}
