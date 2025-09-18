@@ -473,6 +473,11 @@ border-radius: 30px;
   object-fit: cover;
 }
 
+.assistance__content-2 h1{
+  font-size: 25px; 
+  font-weight: 900;
+}
+
 .assistance__content-1 h2,
 .assistance__content-2 h2 {
   font-size: 35px;
