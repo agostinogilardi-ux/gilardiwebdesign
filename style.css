@@ -486,24 +486,9 @@ border-radius: 30px;
 }
 
 
-.assistance__number {
-  width: 50%;
-}
 
-.assistance__number-1 {
-  width: 100%; 
-}
-
-.assistance__number h2{
-margin-left: 180px;font-size: 50px;font-weight: 600; padding: 0;color: rgb(239, 199, 94);
-}
-.assistance__number-1 h2{
-text-align: right; margin-right: 180px;font-size: 50px;font-weight: 600; padding: 0;color: rgb(239, 199, 94)
-}
 @media (max-width: 768px) {
-  .assistance__number-1 h2,
-  .assistance__number h2{
-   margin: 20px;}
+ 
    .assistance__content-1 h2{
     margin-top: 40px;
    }
