@@ -1677,17 +1677,27 @@ p.gb-headline .gb-icon {
   background: #f7f7f7;
   border: none;
   text-align: left;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: background 0.3s;
+  color: #000;          /* forza colore nero */
+  -webkit-appearance: none; /* elimina stile di default Safari iOS */
 }
 .faq-question:hover {
   background: #e2e2e2;
 }
+
+
+.faq-question:focus,
+.faq-question:active {
+  color: #000;          /* resta nero anche al tap */
+  outline: none;        /* niente bordo blu */
+}
+
 .faq-question .arrow {
   transition: transform 0.3s ease;
   font-size: 16px;
