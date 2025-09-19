@@ -207,6 +207,7 @@
 
       <button type="submit">Invia</button>
     </form>
+    <div id="reviewMessage" class="form-message"></div>
 </section>
 
 <p class="gb-headline">
@@ -228,6 +229,81 @@
     </div>
   </div>
   
+ <!-- SEZIONE FAQ -->
+<section class="faq-section">
+  <h2>Domande Frequenti</h2>
+<div class="faq-grid">
+  <div class="faq-item">
+    <button class="faq-question">Che tipo di siti web realizzate? <span class="arrow">▼</span></button>
+    <div class="faq-answer">
+      <p>Creiamo siti su misura: vetrina, portfolio, e-commerce, blog e landing page. Tutto ottimizzato per velocità, usabilità e SEO.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Quanto costa un sito web? <span class="arrow">▼</span></button>
+    <div class="faq-answer">
+      <p>Dipende dalle funzionalità e dalla complessità del progetto. Forniamo sempre un preventivo personalizzato e trasparente.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Quanto tempo ci vuole per avere il mio sito online? <span class="arrow">▼</span></button>
+    <div class="faq-answer">
+      <p>In media 4-6 settimane per un sito base, 8-12 settimane per progetti complessi come e-commerce.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Il mio sito sarà ottimizzato per smartphone e tablet? <span class="arrow">▼</span></button>
+    <div class="faq-answer">
+      <p>Assolutamente sì! Tutti i nostri siti sono <strong>responsive</strong> e si adattano perfettamente a qualsiasi dispositivo.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Posso gestire e aggiornare i contenuti da solo? <span class="arrow">▼</span></button>
+    <div class="faq-answer">
+      <p>No, i siti che realizziamo sono creati su misura e non prevedono un pannello di gestione. Se avrai bisogno di modifiche o aggiornamenti, ci occuperemo noi di tutto, così avrai sempre un sito aggiornato senza rischi tecnici.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Offrite manutenzione e assistenza dopo la consegna? <span class="arrow">▼</span></button>
+    <div class="faq-answer">
+      <p>Sì! Possiamo occuparci di aggiornamenti, backup e sicurezza per mantenere il sito sempre performante.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Il sito sarà visibile su Google? <span class="arrow">▼</span></button>
+    <div class="faq-answer">
+      <p>Tutti i nostri siti sono ottimizzati con le best practice SEO. Inoltre, offriamo pacchetti SEO avanzati per chi vuole scalare i motori di ricerca.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Potete integrare strumenti come newsletter, chat o prenotazioni online? <span class="arrow">▼</span></button>
+    <div class="faq-answer">
+      <p>Certo! Possiamo integrare sistemi di booking, chat, newsletter, analytics e molto altro in base alle tue esigenze.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Serve per forza un contratto a lungo termine? <span class="arrow">▼</span></button>
+    <div class="faq-answer">
+      <p>No. Puoi commissionarci solo la realizzazione del sito. La manutenzione e altri servizi extra sono opzionali.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Come iniziamo a collaborare? <span class="arrow">▼</span></button>
+    <div class="faq-answer">
+      <p>Scrivici tramite il form di contatto o via email. Ti chiederemo qualche info sul tuo progetto e ti invieremo un preventivo gratuito e senza impegno.</p>
+    </div>
+  </div>
+</div>
+</section>
 
 <footer class="footer-premium">
   <div class="footer-premium__container">
@@ -281,6 +357,31 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js" integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA==" crossorigin="anonymous"></script>
 
+<!-- JS -->
+<script>
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const answer = button.nextElementSibling;
+
+    // Chiudi tutte le altre
+    document.querySelectorAll('.faq-answer').forEach(a => {
+      if (a !== answer) a.style.maxHeight = null;
+    });
+    document.querySelectorAll('.faq-question').forEach(b => {
+      if (b !== button) b.classList.remove('active');
+    });
+
+    // Toggle attuale
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+      button.classList.remove('active');
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      button.classList.add('active');
+    }
+  });
+});
+</script>
   <script>
    const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -308,14 +409,14 @@ anchorLinks.forEach(link => {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("contactForm");
-  const messageBox = document.getElementById("formMessage");
+  const reviewForm = document.getElementById("review-form");
+  const reviewMessage = document.getElementById("reviewMessage");
 
-  form.addEventListener("submit", async function (e) {
+  reviewForm.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    const formData = new FormData(form);
-    const action = form.getAttribute("action");
+    const formData = new FormData(reviewForm);
+    const action = reviewForm.getAttribute("action");
 
     try {
       const response = await fetch(action, {
@@ -325,16 +426,16 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       if (response.ok) {
-        form.reset();
-        messageBox.textContent = "✅ Grazie! Ti ricontatterò al più presto.";
-        messageBox.className = "form-message success";
+        reviewForm.reset();
+        reviewMessage.textContent = "✅ Grazie! La tua recensione è stata inviata con successo.";
+        reviewMessage.className = "form-message success";
       } else {
-        messageBox.textContent = "⚠️ Si è verificato un errore. Riprova più tardi.";
-        messageBox.className = "form-message error";
+        reviewMessage.textContent = "⚠️ Si è verificato un errore. Riprova più tardi.";
+        reviewMessage.className = "form-message error";
       }
     } catch (error) {
-      messageBox.textContent = "❌ Errore di connessione. Controlla la rete e riprova.";
-      messageBox.className = "form-message error";
+      reviewMessage.textContent = "❌ Errore di connessione. Controlla la rete e riprova.";
+      reviewMessage.className = "form-message error";
     }
   });
 });
