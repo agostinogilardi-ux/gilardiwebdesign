@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scopri chi siamo: un team specializzato nella realizzazione di siti web professionali. Passione, esperienza e soluzioni su misura per il tuo business.">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lascia una recensione | Gilardi Web Design</title>
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <link rel="canonical" href="https://gilardiwebdesign.it/recensioni.html" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+  <meta property="og:title" content="Lascia una recensione | Gilardi Web Design" />
+  <meta property="og:description" content="Hai già scelto i nostri servizi? Scrivi una recensione e racconta la tua esperienza con Gilardi Web Design." />
+  <meta property="og:image" content="https://gilardiwebdesign.it/images/foto2.png" />
+  <meta property="og:image:alt" content="Modulo per lasciare una recensione su Gilardi Web Design" />
+  <meta property="og:url" content="https://gilardiwebdesign.it/recensioni.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Gilardi Web Design" />
+  <meta property="og:locale" content="it_IT" />
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" integrity="sha512-ztsAq/T5Mif7onFaDEa5wsi2yyDn5ygdVwSSQ4iok5BPJQGYz1CoXWZSA7OgwGWrxrSrbF0K85PD5uLpimu4eQ==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="header">
+   <div class="logo">
+     <a href="index.html">
+      <img src="images/logo.png" alt="Logo Gilardi web design">
+    </a>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Chi sono</a></li>
+      <li><a href="index.html#skills">Perché noi</a></li>
+      <li><a href="index.html#funzione" >Come funziona</a></li>
+      <li><a href="index.html#progetti">Progetti</a></li>
+      <li><a href="recensioni.html">Recensioni</a></li>
+  
+    <!-- Dropdown Contattami -->
+    <li class="dropdown">
+      <a href="javascript:void(0)" style="font-weight: 800;color:rgb(200, 167, 82) !important">Contattami ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="index.html#contact">Preventivo</a></li>
+        <li><a href="tel:+393421470523">Chiama ora</a></li>
+      </ul>
+    </li>
+  </ul>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  
+
+<div id="feedback"></div>
+<section class="reviews-section"style="margin-top: 150px;">
+  <!-- Colonna sinistra -->
+  <div class="reviews-left">
+    <h2>Scrivi qui la tua recensione o la tua opnione</h2>
+  </div>
+
+  <!-- Colonna destra -->
+  <div class="reviews-right">
+    <form id="review-form" action="https://formspree.io/f/xwpqgpbv"  method="POST">
+      <label for="name" style="margin: 0;">Nome:</label>
+      <input type="text" style="height: 20px; padding: 10px;" id="name" name="name" required>
+
+      <label for="rating" style="margin: 0;">Valutazione:</label>
+      <select id="rating" name="rating" required>
+        <option value="5">⭐⭐⭐⭐⭐ - Eccellente</option>
+        <option value="4">⭐⭐⭐⭐ - Molto buono</option>
+        <option value="3">⭐⭐⭐ - Discreto</option>
+        <option value="2">⭐⭐ - Scarso</option>
+        <option value="1">⭐ - Pessimo</option>
+      </select>
+
+      <label for="message" style="margin: 0;">Recensione:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Invia</button>
+    </form>
+    <div id="reviewMessage" class="form-message"></div>
+</section>
+
+<p class="gb-headline">
+	<span class="gb-icon">
+          <span class="gb-headline-text"><a href="about.html#testimonianze" data-type="internal" data-id="#testimonianze">Guarda tutte le testimonianze</a>
+			</span>
+		<svg aria-hidden="true" role="img" height="1em" width="1em" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+          </svg>
+	</span>
+</p>
+  
+
+
+<footer class="footer-premium">
+  <div class="footer-premium__container">
+    <div class="footer-premium__brand">
+       <div class="logo-1">
+     <a href="/">
+      <img src="images/logo.png" alt="Logo Gilardi web design">
+    </a>
+       </div>
+    </div>
+    <div class="footer-premium__nav">
+      <ul>
+       <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Chi sono</a></li>
+        <li><a href="index.html#skills">Perché noi</a></li>
+        <li><a href="index.html#funzione">Come funziona</a></li>
+        <li><a href="index.html#progetti">Progetti</a></li>
+        <li><a href="recensioni.html">Recensioni</a></li>
+        <li><a href="index.html#contact">Contattami</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-premium__container">
+<div class="footer-premium__social">
+      <h3>Seguimi su:</h3>
+      <p><a href="https://www.tiktok.com/@agogil_web_design" target="_blank"alt="Tik Tok">Tik Tok</a> /
+      <a href="https://wa.me/393421470523?text=Ciao,%20sono%20interessato%20al%20tuo%20servizio!" target="_blank">Whatsapp</a></p>
+    </div>
+    <div class="footer-premium__contacts">
+      <h3>Contatti</h3>
+      <p>
+        <a href="mailto:agostino.gilardi@gmail.com"> agostino.gilardi@gmail.com</a><br>
+        <a href="tel:+393421470523"> +39 342 147 0523</a>
+      </p>
+    </div>
+    </div>
+  <div class="footer-premium__bottom">
+    <p>&copy; 2025 Gilardi Web Design. Tutti i diritti riservati.</p>
+    <p>
+      <a href="privacy-policy.html">Privacy Policy</a> | 
+      <a href="cookie-policy.html">Cookie Policy</a>
+    </p>
+  </div>
+</footer>
+
+<a href="https://wa.me/393421470523?text=Ciao,%20sono%20interessato%20al%20tuo%20servizio!" class="whatsapp-float" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+</a>
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js" integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA==" crossorigin="anonymous"></script>
+
+<!-- JS -->
+<script>
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const answer = button.nextElementSibling;
+
+    // Chiudi tutte le altre
+    document.querySelectorAll('.faq-answer').forEach(a => {
+      if (a !== answer) a.style.maxHeight = null;
+    });
+    document.querySelectorAll('.faq-question').forEach(b => {
+      if (b !== button) b.classList.remove('active');
+    });
+
+    // Toggle attuale
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+      button.classList.remove('active');
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      button.classList.add('active');
+    }
+  });
+});
+</script>
+  <script>
+   const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+anchorLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const targetID = this.getAttribute('href');
+    const targetElement = document.querySelector(targetID);
+
+    if (targetElement) {
+      // calcolo la posizione dell'elemento
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      // aggiungo lo scroll corrente della pagina
+      const offsetPosition = elementPosition + window.scrollY - 100; // 100px sopra
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+  </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const reviewForm = document.getElementById("review-form");
+  const reviewMessage = document.getElementById("reviewMessage");
+
+  reviewForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(reviewForm);
+    const action = reviewForm.getAttribute("action");
+
+    try {
+      const response = await fetch(action, {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" }
+      });
+
+      if (response.ok) {
+        reviewForm.reset();
+        reviewMessage.textContent = "✅ Grazie! La tua recensione è stata inviata con successo.";
+        reviewMessage.className = "form-message success";
+      } else {
+        reviewMessage.textContent = "⚠️ Si è verificato un errore. Riprova più tardi.";
+        reviewMessage.className = "form-message error";
+      }
+    } catch (error) {
+      reviewMessage.textContent = "❌ Errore di connessione. Controlla la rete e riprova.";
+      reviewMessage.className = "form-message error";
+    }
+  });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+
+  /* Open Panel */
+  $(".hamburger").on('click', function() {
+    $(".menu").toggleClass("menu--open");
+  });
+  // Chiudi menu quando clicchi su un link
+  $(".menu a").on('click', function() {
+    $(".menu").removeClass("menu--open");
+  });
+
+});
+</script>
+<script>
+
+  jQuery("document").ready(function($){
+	var nav = $('.header');
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 50) {
+			nav.addClass("f-nav");
+		} else {
+			nav.removeClass("f-nav");
+		}
+	});
+});
+
+window.addEventListener("scroll", function () {
+  if (window.innerWidth > 768) {
+    document.querySelector(".header").classList.toggle(
+      "f-nav",
+      window.scrollY > 50
+    );
+  }
+});
+</script>
+
+
+
+</body>
+</html>

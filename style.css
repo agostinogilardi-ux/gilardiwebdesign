@@ -85,6 +85,8 @@ p{line-height: 28px; font-weight: 300;}
 .f-nav .button{color: #000}
 .hamburger{display: none;}
 
+
+
 /* Disattiva underline animato sotto i link del menu su mobile */
 @media (max-width: 768px) {
   .menu li a::after {
@@ -240,9 +242,9 @@ p{line-height: 28px; font-weight: 300;}
     display: block;
     width: 30px;
     position: fixed;
-    top: 25px;
+    top: 28px;
     right: 30px;
-    background: #fff;
+    background: #e5e3e3;
     z-index: 10000;
   }
   .hamburger span {
