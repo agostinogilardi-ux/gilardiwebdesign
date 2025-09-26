@@ -444,13 +444,43 @@ Scopri di più su <a href="about.html">chi sono</a> e come posso aiutarti.</p>
   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
 </a>
 
-
+	<!-- banner cookie -->
+			<div class="cookie-banner" id="cookie-banner">
+				<p>Utilizziamo cookie per migliorare la tua esperienza. Alcuni sono essenziali, altri servono per statistiche e marketing. <a href="cookie-policy.html" target="_blank">Scopri di più</a>.</p>
+				<div class="cookie-buttons reset">
+					<button id="accept-cookies" class="reset">Accetta tutti</button>
+					<button id="reject-cookies"class="reset">Rifiuta</button>
+				</div>
+			</div>
 
   <!-- Jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js" integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA==" crossorigin="anonymous"></script>
   
-  
+  <script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const banner = document.getElementById("cookie-banner");
+					const acceptBtn = document.getElementById("accept-cookies");
+					const rejectBtn = document.getElementById("reject-cookies");
+
+					// Mostra solo se non c'è già una scelta
+					if (!localStorage.getItem("cookieChoice")) {
+					banner.style.display = "flex";
+					}
+
+					acceptBtn.addEventListener("click", () => {
+					localStorage.setItem("cookieChoice", "accepted");
+					banner.style.display = "none";
+					// Qui puoi abilitare servizi come Google Analytics
+					});
+
+					rejectBtn.addEventListener("click", () => {
+					localStorage.setItem("cookieChoice", "rejected");
+					banner.style.display = "none";
+					// Qui puoi bloccare script non essenziali
+					});
+				});
+				</script>
   <script>
    const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
