@@ -1,62 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Sitemap ottimizzata per gilardiwebdesign.it - aggiornata il 2025-09-30 -->
 
-<url>
-  <loc>https://gilardiwebdesign.it/</loc>
-  <lastmod>2025-09-30T11:11:53+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://gilardiwebdesign.it/about.html</loc>
-  <lastmod>2025-09-30T11:12:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gilardiwebdesign.it/blog.html</loc>
-  <lastmod>2025-09-30T11:12:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gilardiwebdesign.it/recensioni.html</loc>
-  <lastmod>2025-09-30T11:12:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gilardiwebdesign.it/errori-siti-web-attivita-locali.html</loc>
-  <lastmod>2025-09-30T11:12:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gilardiwebdesign.it/rinnovo-sito-web-catania.html</loc>
-  <lastmod>2025-09-30T11:12:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gilardiwebdesign.it/ristorante-catania-sito-web.html</loc>
-  <lastmod>2025-09-30T11:12:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gilardiwebdesign.it/privacy-policy.html</loc>
-  <lastmod>2025-09-30T11:12:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gilardiwebdesign.it/cookie-policy.html</loc>
-  <lastmod>2025-09-30T11:12:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gilardiwebdesign.it/quanto-costa-sito-web-catania.html</loc>
-  <lastmod>2025-09-30T11:12:59+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <!-- Homepage -->
+  <url>
+    <loc>https://gilardiwebdesign.it/</loc>
+    <lastmod>2025-09-30T11:11:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
 
+  <!-- Pagine principali -->
+  <url>
+    <loc>https://gilardiwebdesign.it/about.html</loc>
+    <lastmod>2025-09-30T11:12:58+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gilardiwebdesign.it/recensioni.html</loc>
+    <lastmod>2025-09-30T11:12:58+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://gilardiwebdesign.it/blog.html</loc>
+    <lastmod>2025-09-30T11:12:58+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://gilardiwebdesign.it/errori-siti-web-attivita-locali.html</loc>
+    <lastmod>2025-09-30T11:12:58+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://gilardiwebdesign.it/rinnovo-sito-web-catania.html</loc>
+    <lastmod>2025-09-30T11:12:58+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://gilardiwebdesign.it/ristorante-catania-sito-web.html</loc>
+    <lastmod>2025-09-30T11:12:59+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://gilardiwebdesign.it/quanto-costa-sito-web-catania.html</loc>
+    <lastmod>2025-09-30T11:12:59+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Pagine legali -->
+  <url>
+    <loc>https://gilardiwebdesign.it/privacy-policy.html</loc>
+    <lastmod>2025-09-30T11:12:59+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://gilardiwebdesign.it/cookie-policy.html</loc>
+    <lastmod>2025-09-30T11:12:59+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
 
 </urlset>
