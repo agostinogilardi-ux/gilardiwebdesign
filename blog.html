@@ -38,9 +38,9 @@
 }
 </script>
 </head>
-<body>
 
-  <div class="header">
+<body>
+    <div class="header">
    <div class="logo">
      <a href="index.html">
       <img src="images/logo.png" alt="Logo Gilardi web design">
@@ -71,134 +71,187 @@
       <span></span>
     </div>
   </div>
+  
+    <!-- Skip Link per Accessibilità -->
+    <a href="#main-content" class="skip-link">Salta al contenuto principale</a>
+
     
-</head>
-<body>
-    <section class="blog-section">
-        <div class="blog-content">
-            <header class="blog-header">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>→</span>
+        <span aria-current="page">Blog</span>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+     
+        <section class="blog-section">
+            
+            <!-- Blog Content -->
+            <div class="blog-content">
                 <h1 class="blog-title">Blog</h1>
-            </header>
-
-            <ul class="blog-list">
-                <li class="blog-item">
-                    <img 
-                        src="images/catania-400.webp"
-                        srcset="
-                            images/catania-400.webp 400w,
-                            images/catania-600.webp 600w,
-                            images/catania-800.webp 800w"
-                        sizes="
-                            (max-width: 768px) 100vw,
-                            (max-width: 1024px) 50vw,
-                            200px"
-                        alt="Quanto costa un sito internet a Catania" 
-                        class="blog-image"
-                        loading="lazy">
-
-                    <div class="blog-text">
-                        <div class="blog-date">27 Settembre 2025</div>
-                        <h2 class="blog-item-title">
-                            <a href="quanto-costa-sito-web-catania.html">Quanto Costa un Sito Internet a Catania?</a>
-                        </h2>
-                        <p class="blog-excerpt">
-                            Stai pensando di creare un sito web per la tua attività a Catania ma non sai quanto potrebbe costarti? In questa guida completa analizzeremo tutti i fattori che influenzano il prezzo di un sito internet nel capoluogo etneo, dalle soluzioni più economiche ai progetti più complessi.
-                        </p>
-                        <a href="quanto-costa-sito-web-catania.html" class="blog-read-more">Leggi tutto</a>
+                <!-- Search & Filters -->
+                <div class="blog-controls">
+                    <div class="search-box">
+                        <input 
+                            type="search" 
+                            id="searchInput" 
+                            placeholder="Cerca articoli..."
+                            aria-label="Cerca articoli nel blog">
+                        <span class="search-icon" aria-hidden="true">🔍</span>
                     </div>
-                </li>
-
-                <li class="blog-item">
-                    <img 
-                        src="images/restyling-400.webp"
-                        srcset="
-                            images/restyling-400.webp 400w,
-                            images/restyling-600.webp 600w,
-                            images/restyling-800.webp 800w"
-                        sizes="(max-width: 500px) 100vw,
-                                (max-width: 900px) 600px,
-                                800px"
-                        alt="Quando e perche fare il restyling del sito web a catania" 
-                        class="blog-image"
-                        loading="lazy">
-
-                    <div class="blog-text">
-                        <div class="blog-date">20 Settembre 2025</div>
-                        <h2 class="blog-item-title">
-                            <a href="rinnovo-sito-web-catania.html">Restyling Siti Web a Catania: Quando e Perché Rinnovare il Tuo Sito</a>
-                        </h2>
-                        <p class="blog-excerpt">
-                            Il tuo sito web è datato? Scopri perché il restyling è fondamentale per la tua attività a Catania. Esempi reali, costi e vantaggi del rinnovamento web.
-                        </p>
-                        <a href="rinnovo-sito-web-catania.html" class="blog-read-more">Leggi tutto</a>
+                    <div class="filter-buttons" role="group" aria-label="Filtra per categoria">
+                        <button class="filter-btn active" data-category="all">Tutti</button>
+                        <button class="filter-btn" data-category="guide">Guide</button>
+                        <button class="filter-btn" data-category="design">Design</button>
+                        <button class="filter-btn" data-category="consigli">Consigli</button>
+                        <button class="filter-btn" data-category="business">Business</button>
                     </div>
-                </li>
+                </div>
 
-                <li class="blog-item">
-                    <img 
-                        src="images/5-errori-400.webp"
-                        srcset="
-                            images/5-errori-400.webp 400w,
-                            images/5-errori-600.webp 600w,
-                            images/5-errori-800.webp 800w"
-                            sizes="(max-width: 500px) 100vw,
-                                    (max-width: 900px) 600px,
-                                    800px"
-                        alt="Guida completa per evitare gli errori nei siti web" 
-                        class="blog-image"
-                        loading="lazy">
+                <!-- Blog List -->
+                <ul class="blog-list" id="blogList">
+                    <li class="blog-item" data-category="guide" data-title="quanto costa un sito internet a catania">
+                        <img 
+                            src="images/catania-400.webp"
+                            srcset="images/catania-400.webp 400w, images/catania-600.webp 600w"
+                            sizes="(max-width: 768px) 100vw, 250px"
+                            alt="Costi sito web Catania" 
+                            class="blog-image"
+                            loading="eager">
+                        <div class="blog-text">
+                            <div>
+                                <div class="blog-meta">
+                                    <span class="blog-category">Guide</span>
+                                    <time datetime="2025-09-27">27 Settembre 2025</time>
+                                    <span class="reading-time">5 min lettura</span>
+                                </div>
+                                <h2 class="blog-item-title">
+                                    <a href="quanto-costa-sito-web-catania.html">Quanto Costa un Sito Internet a Catania?</a>
+                                </h2>
+                                <p class="blog-excerpt">
+                                    Stai pensando di creare un sito web per la tua attività a Catania ma non sai quanto potrebbe costarti? In questa guida completa analizzeremo tutti i fattori che influenzano il prezzo.
+                                </p>
+                            </div>
+                            <a href="quanto-costa-sito-web-catania.html" class="blog-read-more">
+                                Leggi tutto →
+                            </a>
+                        </div>
+                    </li>
 
-                    <div class="blog-text">
-                        <div class="blog-date">15 Settembre 2025</div>
-                        <h2 class="blog-item-title">
-                            <a href="errori-siti-web-attivita-locali.html">5 Errori Comuni nei Siti Web delle Attività Locali da Evitare nel 2025 | Web Design</a>
-                        </h2>
-                        <p class="blog-excerpt">
-                            Il 68% delle attività locali perde potenziali clienti a causa di errori evitabili nei propri siti web.
-                        </p>
-                        <a href="errori-siti-web-attivita-locali.html" class="blog-read-more">Leggi tutto</a>
-                    </div>
-                </li>
+                    <li class="blog-item" data-category="design" data-title="restyling siti web a catania quando e perché rinnovare">
+                        <img 
+                            src="images/restyling-400.webp"
+                            srcset="images/restyling-400.webp 400w, images/restyling-600.webp 600w"
+                            sizes="(max-width: 768px) 100vw, 250px"
+                            alt="Restyling siti web Catania" 
+                            class="blog-image"
+                            loading="lazy">
+                        <div class="blog-text">
+                            <div>
+                                <div class="blog-meta">
+                                    <span class="blog-category">Design</span>
+                                    <time datetime="2025-09-20">20 Settembre 2025</time>
+                                    <span class="reading-time">6 min lettura</span>
+                                </div>
+                                <h2 class="blog-item-title">
+                                    <a href="rinnovo-sito-web-catania.html">Restyling Siti Web a Catania: Quando e Perché Rinnovare</a>
+                                </h2>
+                                <p class="blog-excerpt">
+                                    Il tuo sito web è datato? Scopri perché il restyling è fondamentale per la tua attività a Catania. Esempi reali, costi e vantaggi del rinnovamento web.
+                                </p>
+                            </div>
+                            <a href="rinnovo-sito-web-catania.html" class="blog-read-more">
+                                Leggi tutto →
+                            </a>
+                        </div>
+                    </li>
 
-                <li class="blog-item">
-                    <img 
-                        src="images/ristorante-400.webp"
-                        srcset="
-                            images/ristorante-400.webp 400w,
-                            images/ristorante-600.webp 600w,
-                            images/ristorante-800.webp 800w"
-                        sizes="
-                            (max-width: 768px) 100vw,
-                            (max-width: 1024px) 50vw,
-                            200px"
-                        alt="Perché ogni ristorante a Catania dovrebbe avere un sito web." 
-                        class="blog-image"
-                        loading="lazy">
+                    <li class="blog-item" data-category="consigli" data-title="5 errori comuni nei siti web delle attività locali">
+                        <img 
+                            src="images/5-errori-400.webp"
+                            srcset="images/5-errori-400.webp 400w, images/5-errori-600.webp 600w"
+                            sizes="(max-width: 768px) 100vw, 250px"
+                            alt="Errori comuni siti web" 
+                            class="blog-image"
+                            loading="lazy">
+                        <div class="blog-text">
+                            <div>
+                                <div class="blog-meta">
+                                    <span class="blog-category">Consigli</span>
+                                    <time datetime="2025-09-15">15 Settembre 2025</time>
+                                    <span class="reading-time">7 min lettura</span>
+                                </div>
+                                <h2 class="blog-item-title">
+                                    <a href="errori-siti-web-attivita-locali.html">5 Errori Comuni nei Siti Web delle Attività Locali da Evitare</a>
+                                </h2>
+                                <p class="blog-excerpt">
+                                    Il 68% delle attività locali perde potenziali clienti a causa di errori evitabili nei propri siti web. Scopri quali sono e come risolverli.
+                                </p>
+                            </div>
+                            <a href="errori-siti-web-attivita-locali.html" class="blog-read-more">
+                                Leggi tutto →
+                            </a>
+                        </div>
+                    </li>
 
-                    <div class="blog-text">
-                        <div class="blog-date">08 Settembre 2025</div>
-                        <h2 class="blog-item-title">
-                            <a href="ristorante-catania-sito-web.html">Perché un Ristorante a Catania Ha Bisogno di un Sito Web nel 2025 | Web Design Catania</a>
-                        </h2>
-                        <p class="blog-excerpt">
-                            Se hai un ristorante a Catania e ancora non hai un sito web, stai perdendo clienti ogni giorno. Non è una minaccia, è un fatto. Scopri perché e la soluzione.
-                        </p>
-                        <a href="ristorante-catania-sito-web.html" class="blog-read-more">Leggi tutto</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+                    <li class="blog-item" data-category="business" data-title="perché un ristorante a catania ha bisogno di un sito web">
+                        <img 
+                            src="images/ristorante-400.webp"
+                            srcset="images/ristorante-400.webp 400w, images/ristorante-600.webp 600w"
+                            sizes="(max-width: 768px) 100vw, 250px"
+                            alt="Sito web per ristoranti" 
+                            class="blog-image"
+                            loading="lazy">
+                        <div class="blog-text">
+                            <div>
+                                <div class="blog-meta">
+                                    <span class="blog-category">Business</span>
+                                    <time datetime="2025-09-08">08 Settembre 2025</time>
+                                    <span class="reading-time">5 min lettura</span>
+                                </div>
+                                <h2 class="blog-item-title">
+                                    <a href="ristorante-catania-sito-web.html">Perché un Ristorante a Catania Ha Bisogno di un Sito Web nel 2025</a>
+                                </h2>
+                                <p class="blog-excerpt">
+                                    Se hai un ristorante a Catania e ancora non hai un sito web, stai perdendo clienti ogni giorno. Non è una minaccia, è un fatto. Scopri perché.
+                                </p>
+                            </div>
+                            <a href="ristorante-catania-sito-web.html" class="blog-read-more">
+                                Leggi tutto →
+                            </a>
+                        </div>
+                    </li>
+                </ul>
 
-        <aside class="sidebar-1">
+                <!-- No Results Message -->
+                <div class="no-results" id="noResults" style="display: none;">
+                    <div class="no-results-icon">🔍</div>
+                    <h2>Nessun articolo trovato</h2>
+                    <p>Prova a modificare i filtri o la ricerca</p>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination" id="pagination">
+                    <button onclick="changePage(-1)" id="prevBtn">← Precedente</button>
+                    <button class="active">1</button>
+                    <button onclick="changePage(1)" id="nextBtn" disabled>Successivo →</button>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+           <aside class="sidebar-1">
             <div class="contact-card">
                 <h3>Hai bisogno di un sito web?</h3>
                 <p>Creo siti web minimal, funzionali e ottimizzati per la tua attività. Design su misura che converte i visitatori in clienti.</p>
                 <a href="index.html#contact" class="contact-button">Richiedi preventivo</a>
             </div>
         </aside>
-    </section>
+        </section>
+    </main>
 
-<footer class="footer-premium">
+   <footer class="footer-premium">
   <div class="footer-premium__container">
     <div class="footer-premium__brand">
        <div class="logo-1">
@@ -351,7 +404,110 @@ window.addEventListener("scroll", function () {
 });
 </script>
 
+    <script>
+        // Dati degli articoli
+        const articles = document.querySelectorAll('.blog-item');
+        const searchInput = document.getElementById('searchInput');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const noResults = document.getElementById('noResults');
+        const blogList = document.getElementById('blogList');
 
+        // Funzione di ricerca
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            filterArticles(searchTerm, getActiveCategory());
+        });
 
+        // Funzione per i filtri categoria
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Rimuovi active da tutti i bottoni
+                filterButtons.forEach(b => b.classList.remove('active'));
+                // Aggiungi active al bottone cliccato
+                e.target.classList.add('active');
+                
+                const category = e.target.dataset.category;
+                const searchTerm = searchInput.value.toLowerCase();
+                filterArticles(searchTerm, category);
+            });
+        });
+
+        // Click sui link delle categorie nella sidebar
+        document.querySelectorAll('.categories-list a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const category = e.currentTarget.dataset.category;
+                
+                // Attiva il filtro corrispondente
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.dataset.category === category) {
+                        btn.classList.add('active');
+                    }
+                });
+                
+                filterArticles('', category);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        // Funzione principale di filtraggio
+        function filterArticles(searchTerm, category) {
+            let visibleCount = 0;
+
+            articles.forEach(article => {
+                const title = article.dataset.title || '';
+                const articleCategory = article.dataset.category;
+                
+                const matchesSearch = title.includes(searchTerm);
+                const matchesCategory = category === 'all' || articleCategory === category;
+
+                if (matchesSearch && matchesCategory) {
+                    article.style.display = 'grid';
+                    visibleCount++;
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+
+            // Mostra/nascondi messaggio "nessun risultato"
+            if (visibleCount === 0) {
+                noResults.style.display = 'block';
+                blogList.style.display = 'none';
+            } else {
+                noResults.style.display = 'none';
+                blogList.style.display = 'block';
+            }
+        }
+
+        // Funzione helper per ottenere la categoria attiva
+        function getActiveCategory() {
+            const activeBtn = document.querySelector('.filter-btn.active');
+            return activeBtn ? activeBtn.dataset.category : 'all';
+        }
+
+        // Paginazione (placeholder per futura implementazione)
+        function changePage(direction) {
+            console.log('Cambio pagina:', direction);
+            // Qui implementerai la logica di paginazione quando avrai più articoli
+        }
+
+        // Annuncia i risultati per screen reader
+        function announceResults(count) {
+            const announcement = count === 0 
+                ? 'Nessun articolo trovato' 
+                : `${count} articolo${count > 1 ? 'i' : ''} trovato${count > 1 ? 'i' : ''}`;
+            
+            // Crea elemento per annuncio accessibile
+            const liveRegion = document.createElement('div');
+            liveRegion.setAttribute('role', 'status');
+            liveRegion.setAttribute('aria-live', 'polite');
+            liveRegion.className = 'sr-only';
+            liveRegion.textContent = announcement;
+            document.body.appendChild(liveRegion);
+            
+            setTimeout(() => liveRegion.remove(), 1000);
+        }
+    </script>
 </body>
 </html>
