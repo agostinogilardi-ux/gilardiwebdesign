@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
   <link rel="manifest" href="favicon/site.webmanifest" />
   <link rel="canonical" href="https://gilardiwebdesign.it/recensioni.html" />
-
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
   <meta property="og:title" content="Lascia una recensione | Gilardi Web Design" />
   <meta property="og:description" content="Hai scelto i nostri servizi? Lascia una recensione e condividi la tua esperienza con Gilardi Web Design." />
@@ -299,11 +299,13 @@ $(document).ready(function() {
 
   /* Open Panel */
   $(".hamburger").on('click', function() {
+    $(this).toggleClass("is-active"); 
     $(".menu").toggleClass("menu--open");
   });
   // Chiudi menu quando clicchi su un link
   $(".menu a").on('click', function() {
     $(".menu").removeClass("menu--open");
+    $(".hamburger").removeClass("is-active");
   });
 
 });

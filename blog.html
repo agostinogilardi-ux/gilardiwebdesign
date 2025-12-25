@@ -394,11 +394,13 @@ $(document).ready(function() {
 
   /* Open Panel */
   $(".hamburger").on('click', function() {
+    $(this).toggleClass("is-active"); 
     $(".menu").toggleClass("menu--open");
   });
   // Chiudi menu quando clicchi su un link
   $(".menu a").on('click', function() {
     $(".menu").removeClass("menu--open");
+    $(".hamburger").removeClass("is-active");
   });
 
 });
